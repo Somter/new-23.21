@@ -1,0 +1,76 @@
+
+@myclass1: header;
+@myback: background-color;
+@mycolor1: #3165bb;
+@mycolor2: @mycolor1+100;
+@text-size: 30px;
+@pos: center;   
+@myclass2: list;    
+@myclass3: div1;
+@myclass: first_block;
+@mycolor4: #d1f6ff;
+@mycolor5:  @mycolor1+100;
+@myclass5: main;    
+@myclass6: footer;
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.@{myclass1} {
+    display: flex;  
+    @{myback}: @mycolor1;
+    color: white;
+    padding: 2%;
+    font-size: @text-size;
+    text-align: @pos;
+}
+
+.@{myclass2}
+{   margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    @{myback}: @mycolor2;
+    color: white;
+    font-size: @text-size;
+
+}
+ul{
+    li{
+        padding-top: 30px;
+    }
+}
+
+.@{myclass}
+{
+    @{myback}: @mycolor4;
+}
+
+.@{myclass5}
+{
+    margin-left: 10%;
+    margin-top: 80px;
+    display: flex;
+}
+
+.text{
+    @{myback}: @mycolor5;
+    color: white; 
+    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.@{myclass6}
+{
+    @{myback}: @mycolor1;
+    height: 120px;
+    color: white;
+    padding: 2%;
+    font-size: @text-size;
+    text-align: @pos;
+    padding-top: 50px;
+}
